@@ -1,0 +1,74 @@
+*{
+    margin:0;
+    padding:0;
+}
+.content{
+    background-color: lightgray;
+    min-height: 25vh;
+}
+header{
+    background-color: lightskyblue;
+    height:15vh;
+}
+main{
+    min-height:85vh;
+}
+.signup{
+    background-color: lightblue;
+}
+.feature{
+    height: 15vh;
+}
+
+/* FARVE class'er */
+.orange{
+    background-color: orangered;
+}
+.red{
+    background-color: red;
+}
+.purple{
+    background-color: plum;
+}
+/* MEDIA Qs */
+@media only screen and (min-width: 600px) {
+    .feature{
+        height: 30vh;
+        width:50%;
+    }
+    .features{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .feature{
+        width: 33.33%;
+    }
+    .signup{
+        width: 100%;
+        order:4;
+    }
+    /* .features{
+    flex-wrap: wrap-reverse;
+    } */
+    .red{
+        order: 3;
+    }
+    .purple{
+        order:2;
+    }
+    .orange{
+        order:1;
+    }
+
+
+
+
+} 
