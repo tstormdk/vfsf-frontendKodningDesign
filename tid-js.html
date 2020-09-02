@@ -1,0 +1,20 @@
+<!-- Sæt dette ind hvor du vil vise tiden -->
+<h2 id="datetime" class="w3-third"></h2>
+
+<!-- Javascriptet sættes ind i bunden af dokumentet -->
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+   m = checkTime(m);
+   document.getElementById('datetime').innerHTML =
+  h + ":" + m;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+
+</script>    
